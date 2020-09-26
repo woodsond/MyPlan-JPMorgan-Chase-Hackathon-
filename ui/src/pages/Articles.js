@@ -5,7 +5,7 @@ import "./Articles.css";
 const Articles = () => {
   return (
     <div className="articles-container">
-      <p>{this.props.title}</p>
+      <p></p>
       <p1>Learn to be finanically literate</p1>
       <Cards />
     </div>
