@@ -2,9 +2,10 @@
 require("dotenv").config({ path: "../.env" });
 import bodyParser from "body-parser";
 import express, { NextFunction, Response, Request } from "express";
-import { hello } from "./routes/hello";
+import { creditCards } from "./routes/creditCards";
+import { articles } from "./routes/articles";
+import { piggyBank } from "./routes/piggyBank";
 
-const serverHost = process.env.REACT_APP_SERVER_HOST || "";
 const serverPort = process.env.REACT_APP_SERVER_PORT || "";
 export const environment: string = process.env.ENVIRONMENT || "";
 
@@ -28,7 +29,9 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   }
 });
 
-app.post("/hello", hello);
+app.post("/creditCards", creditCards);
+app.post("/articles", articles);
+app.post("/piggyBank", piggyBank);
 
 const server = app.listen(serverPort);
 
