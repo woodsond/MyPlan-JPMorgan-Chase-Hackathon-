@@ -7,9 +7,10 @@ import CreditCards from "./pages/CreditCards";
 import Piggy from "./pages/Piggy";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import Footer from "./components/homePageFooter";
 
 const App = (props) => {
-  const [isAuthenticated, setIsAuthenticated] = React.useState(false);
+  const [isAuthenticated, setIsAuthenticated] = React.useState(true);
 
   React.useEffect(() => {
     const token = localStorage.getItem("token");
@@ -23,53 +24,56 @@ const App = (props) => {
   return (
     <>
       {isAuthenticated ? (
-        <Router>
-          <CustomNavbar />
-          <Route
-            path="/MyPiggy"
-            exact
-            render={() => {
-              return (
-                <>
-                  <Piggy title={"MyPiggy"} />
-                </>
-              );
-            }}
-          />
-          <Route
-            path="/Articles"
-            exact
-            render={() => {
-              return (
-                <>
-                  <Articles title={"Financial Articles"} />
-                </>
-              );
-            }}
-          />
-          <Route
-            path="/CreditCards"
-            exact
-            render={() => {
-              return (
-                <>
-                  <CreditCards title={"Credit Cards"} />
-                </>
-              );
-            }}
-          />
-          <Route
-            path="/"
-            exact
-            render={() => {
-              return (
-                <>
-                  <Home title={"Home"} />
-                </>
-              );
-            }}
-          />
-        </Router>
+        <>
+          <Router>
+            <CustomNavbar />
+            <Route
+              path="/MyPiggy"
+              exact
+              render={() => {
+                return (
+                  <>
+                    <Piggy title={"MyPiggy"} />
+                  </>
+                );
+              }}
+            />
+            <Route
+              path="/Articles"
+              exact
+              render={() => {
+                return (
+                  <>
+                    <Articles title={"Financial Articles"} />
+                  </>
+                );
+              }}
+            />
+            <Route
+              path="/CreditCards"
+              exact
+              render={() => {
+                return (
+                  <>
+                    <CreditCards title={"Credit Cards"} />
+                  </>
+                );
+              }}
+            />
+            <Route
+              path="/"
+              exact
+              render={() => {
+                return (
+                  <>
+                    <Home title={"Home"} />
+                  </>
+                );
+              }}
+            />
+          </Router>
+          <Footer />
+        </>
       ) : (
         <>
           <Login />
