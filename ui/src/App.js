@@ -9,7 +9,7 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 
 const App = (props) => {
-  const [isAuthenticated, setIsAuthenticated] = React.useState(false);
+  const [isAuthenticated, setIsAuthenticated] = React.useState(true);
 
   React.useEffect(() => {
     const token = localStorage.getItem("token");
@@ -27,8 +27,18 @@ const App = (props) => {
           <div className="Options">
             <CustomNavBar />
             <Route
+              path="/"
+              exact render={() => {
+                return (
+                  <>
+                    <Home title={"Home"} />
+                  </>
+                );
+              }}
+            />
+            <Route
               path="/MyPiggy"
-              render={() => {
+              exact render={() => {
                 return (
                   <>
                     <Piggy title={"MyPiggy"} />
@@ -38,7 +48,7 @@ const App = (props) => {
             />
             <Route
               path="/Articles"
-              render={() => {
+              exact render={() => {
                 return (
                   <>
                     <Articles title={"Financial Articles"} />
@@ -48,20 +58,10 @@ const App = (props) => {
             />
             <Route
               path="/CreditCards"
-              render={() => {
+              exact render={() => {
                 return (
                   <>
                     <CreditCards title={"Credit Cards"} />
-                  </>
-                );
-              }}
-            />
-            <Route
-              path="/"
-              render={() => {
-                return (
-                  <>
-                    <Home title={"Home"} />
                   </>
                 );
               }}
