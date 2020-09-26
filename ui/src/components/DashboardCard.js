@@ -11,7 +11,7 @@ class DashboardCard extends React.Component{
                 'Misc.'
             ],
             datasets: [{
-                data: [300, 1700, 100],
+                data: [100, 200, 50],
                 backgroundColor: [
                 '#FF6384',
                 '#006838',
@@ -28,7 +28,7 @@ class DashboardCard extends React.Component{
             <div className="column shadow p-3 mb-5 bg-white rounded"> 
                 <div className="mb-4 ml-3">
                     <h5 className="display-6 dc"><b>{this.props.title}</b></h5>
-                    {this.props.title === "Spending" ?
+                    {this.props.title === "Spending By Month" ?
                         <Doughnut data={data} />
                     : <Table />
                     }

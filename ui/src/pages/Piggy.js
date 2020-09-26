@@ -14,8 +14,10 @@ class Piggy extends React.Component{
         this.state = {
             targetAmount: 10000,
             currentAmount: 2000,
+            currentMonth: 200,
+            monthGoal: 500,
             cardSpending: {
-                title: "Spending"
+                title: "Spending By Month"
             },
             cardHistory: {
                 title: "Transaction History"
@@ -33,12 +35,15 @@ class Piggy extends React.Component{
                 <div style={{maxWidth: '90%', marginLeft: '5%'}}>
                     <ProgressBar striped variant="success" now={(this.state.currentAmount / this.state.targetAmount) * 100} />
                 </div>
+                <div style={{marginLeft: '5%', marginTop: '3%'}}>
+                    <h5><span style={{color: "#E0AD2E"}}>Monthly Goal: </span> ${this.state.currentMonth} / ${this.state.monthGoal}</h5>
+                </div>
                 <Container fluid={true} style={{marginTop: '5%', maxWidth: '95%'}}>
                     <Row>
-                        <Column>
+                        <Column lg>
                             <Cards title={this.state.cardSpending.title} />
                         </Column>
-                        <Column>
+                        <Column lg>
                             <Cards title={this.state.cardHistory.title} />
                         </Column>
                     </Row>

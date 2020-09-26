@@ -7,7 +7,7 @@ class PiggyTable extends React.Component{
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                    <th>#</th>
+                    <th>Date</th>
                     <th>Transaction Name</th>
                     <th>Type</th>
                     <th>Amount</th>
@@ -15,19 +15,19 @@ class PiggyTable extends React.Component{
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
+                        <td>9/2020</td>
                         <td>Travis Scott Meal</td>
                         <td>Food</td>
                         <td>$4.00</td>
                     </tr>
                     <tr>
-                        <td>2</td>
+                        <td>9/2020</td>
                         <td>Kith Purchase</td>
                         <td>Clothes</td>
                         <td>$70</td>
                     </tr>
                     <tr>
-                        <td>3</td>
+                        <td>10/2020</td>
                         <td>Saving</td>
                         <td>Deposit</td>
                         <td>$1000</td>
