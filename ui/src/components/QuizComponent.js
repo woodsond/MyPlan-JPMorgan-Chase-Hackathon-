@@ -18,7 +18,7 @@ const QuizComponent = () => {
                 "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
           },
           {
-            "question": "Is Finance impacted by Coid",
+            "question": "Is Finance impacted by Covid",
             "questionType": "text",
             "answerSelectionType": "single",
             "answers": [
