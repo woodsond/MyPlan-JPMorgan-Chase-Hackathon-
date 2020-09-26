@@ -25,11 +25,11 @@ const Home = () => {
                       <p>myPlan helps the youth learn about the world of finance in fun and easy ways. Start investing in the future now.</p>
                   </div>
                   <div>   
-                      <Button variant="outline-success" onClick={event => window.location.href='/piggyBank'}>Start Saving</Button>
+                      <Button variant="outline-success" onClick={event => window.location.href='/MyPiggy'}>Start Saving</Button>
                   </div>
               </Col>
               <Col style={{marginBottom: 10}}>
-                  <img src={saving} className='landphoto' style={{width: 800}} />
+                  <img src={saving} className='landphoto' style={{width: 800}} alt={"Man, woman and school bus."} />
               </Col>
           </Row> 
       </Container>
