@@ -1,22 +1,25 @@
-import React from 'react';
-import {Card} from 'react-bootstrap';
+import React from "react";
+import { Card, Row } from "react-bootstrap";
 
-class CardDetails extends React.Component{
-    render(){
-        return(
-            <Card style={{ width: '22rem', backgroundColor:'lightblue'}}>
-            <Card.Body>
-                <Card.Title>JPMorgan Chase Credit Card</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Bronze Level</Card.Subtitle>
-                <Card.Text>
-                    This card gives 4% cash back on groceries and gas, 3% cash back on 
-                    common consumer goods, and 2% cash back on everything else.
-                </Card.Text>
-                <Card.Link href="#">jpmorgan.com</Card.Link>
-            </Card.Body>
-            </Card>
-        );
-    }
-}
+const CardDetails = (props) => {
+  return (
+    <Row>
+      <Card style={{ width: "22rem", backgroundColor: "white" }}>
+        <Card.Body>
+          <Card.Title>
+            <b>{props.title}</b>
+          </Card.Title>
+          <Card.Subtitle>Annual Fee: {props.annualFee}</Card.Subtitle>
+          <br></br>
+          <Card.Text>{props.description}</Card.Text>
+          <Card.Link href={props.url}>Apply or Learn More</Card.Link>
+        </Card.Body>
+      </Card>
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <img style={{ height: 200, width: 300 }} src={props.image} alt={"Card Details"}></img>
+    </Row>
+  );
+};
 
 export default CardDetails;
