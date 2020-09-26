@@ -11,7 +11,7 @@ import Article1 from "./pages/Article1";
 import Quiz1 from "./components/QuizComponent";
 
 const App = (props) => {
-  const [isAuthenticated, setIsAuthenticated] = React.useState(true);
+  const [isAuthenticated, setIsAuthenticated] = React.useState(false);
 
   React.useEffect(() => {
     const token = localStorage.getItem("token");
