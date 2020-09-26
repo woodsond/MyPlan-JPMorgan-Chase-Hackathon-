@@ -9,7 +9,7 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 
 const App = (props) => {
-  const [isAuthenticated, setIsAuthenticated] = React.useState(false);
+  const [isAuthenticated, setIsAuthenticated] = React.useState(true);
 
   React.useEffect(() => {
     const token = localStorage.getItem("token");
@@ -23,6 +23,8 @@ const App = (props) => {
   return (
     <>
       {isAuthenticated ? (
+        
+        <>
         <Router>
           <CustomNavbar />
           <Route
@@ -70,6 +72,8 @@ const App = (props) => {
             }}
           />
         </Router>
+        <Footer />
+        </>
       ) : (
         <>
           <Login />
