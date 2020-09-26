@@ -7,27 +7,26 @@ import card3 from "../images/boa.jpg";
 import card4 from "../images/dis.png";
 import card5 from "../images/c1pc.png";
 import card6 from "../images/osvc.png";
-import card1Review from '../images/discoverit.png';
-import card1apr from '../images/discoverit2.png';
-import card2Review from '../images/chromecard.png';
-import card2apr from '../images/chromecard2.png';
-import card3Review from '../images/bofa.png';
-import card3apr from '../images/bofa2.png';
-import card4Review from '../images/fourth.png';
-import card4apr from '../images/fourth2.png';
-import card5Review from '../images/discoverit.png';
-import card5apr from '../images/fourth2.png';
-import card6Review from '../images/discoverit.png';
-import card6apr from '../images/six2.png';
-
+import card1Review from "../images/discoverit.png";
+import card1apr from "../images/discoverit2.png";
+import card2Review from "../images/chromecard.png";
+import card2apr from "../images/chromecard2.png";
+import card3Review from "../images/bofa.png";
+import card3apr from "../images/bofa2.png";
+import card4Review from "../images/fourth.png";
+import card4apr from "../images/fourth2.png";
+import card5Review from "../images/discoverit.png";
+import card5apr from "../images/fourth2.png";
+import card6Review from "../images/discoverit.png";
+import card6apr from "../images/six2.png";
 
 const CreditCards = () => {
   return (
     <Container>
       <h1 style={{ color: "green" }}>
-            <b>Start Building Your Credit Now!</b>
-          </h1>
-          <h1 style={{ color: "#39B54A" }}>Great Student Cards</h1>
+        <b>Start Building Your Credit Now!</b>
+      </h1>
+      <h1 style={{ color: "#39B54A" }}>Great Student Cards</h1>
       <Col md={{ offset: 0 }}>
         <div>
           <CardDetails

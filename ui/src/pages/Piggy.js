@@ -1,12 +1,9 @@
 import React from "react";
-
-//Components
-import HeaderContainer from "../components/HeaderContainer";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import Cards from "../components/DashboardCard";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Column from "react-bootstrap/Col";
+import Cards from "../components/DashboardCard";
 
 class Piggy extends React.Component {
   constructor(props) {
@@ -27,8 +24,15 @@ class Piggy extends React.Component {
 
   render() {
     return (
-      <div>
-        <HeaderContainer title={"myPiggy"} />
+      <div
+        className={"container pt-2"}
+        style={{ minHeight: "77vh", overflowX: "hidden" }}
+      >
+        <div>
+          <h2 className="display-4 font-weight-bolder justift-content-center">
+            <span style={{ color: "#39B54A" }}>MyPiggy</span>
+          </h2>
+        </div>
         <div style={{ marginLeft: "5%" }}>
           <h4>Current Savings: ${this.state.currentAmount}</h4>
         </div>

@@ -24,56 +24,55 @@ const App = (props) => {
   return (
     <>
       {isAuthenticated ? (
-        
         <>
-        <Router>
-          <CustomNavbar />
-          <Route
-            path="/MyPiggy"
-            exact
-            render={() => {
-              return (
-                <>
-                  <Piggy title={"MyPiggy"} />
-                </>
-              );
-            }}
-          />
-          <Route
-            path="/Articles"
-            exact
-            render={() => {
-              return (
-                <>
-                  <Articles title={"Financial Articles"} />
-                </>
-              );
-            }}
-          />
-          <Route
-            path="/CreditCards"
-            exact
-            render={() => {
-              return (
-                <>
-                  <CreditCards title={"Credit Cards"} />
-                </>
-              );
-            }}
-          />
-          <Route
-            path="/"
-            exact
-            render={() => {
-              return (
-                <>
-                  <Home title={"Home"} />
-                </>
-              );
-            }}
-          />
-        </Router>
-        <Footer />
+          <Router>
+            <CustomNavbar />
+            <Route
+              path="/MyPiggy"
+              exact
+              render={() => {
+                return (
+                  <>
+                    <Piggy title={"MyPiggy"} />
+                  </>
+                );
+              }}
+            />
+            <Route
+              path="/Articles"
+              exact
+              render={() => {
+                return (
+                  <>
+                    <Articles title={"Financial Articles"} />
+                  </>
+                );
+              }}
+            />
+            <Route
+              path="/CreditCards"
+              exact
+              render={() => {
+                return (
+                  <>
+                    <CreditCards title={"Credit Cards"} />
+                  </>
+                );
+              }}
+            />
+            <Route
+              path="/"
+              exact
+              render={() => {
+                return (
+                  <>
+                    <Home title={"Home"} />
+                  </>
+                );
+              }}
+            />
+          </Router>
+          <Footer />
         </>
       ) : (
         <>
