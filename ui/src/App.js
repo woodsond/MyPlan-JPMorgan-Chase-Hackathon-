@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import CustomNavBar from "./components/customNavBar";
+import CustomNavbar from "./components/CustomNavbar";
 import Articles from "./pages/Articles";
 import CreditCards from "./pages/CreditCards";
 import Piggy from "./pages/Piggy";
@@ -25,7 +25,7 @@ const App = (props) => {
       {isAuthenticated ? (
         <Router>
           <div className="Options">
-            <CustomNavBar />
+            <CustomNavbar />
             <Route
               path="/"
               exact render={() => {
@@ -62,6 +62,16 @@ const App = (props) => {
                 return (
                   <>
                     <CreditCards title={"Credit Cards"} />
+                  </>
+                );
+              }}
+            />
+            <Route
+              path="/"
+              render={() => {
+                return (
+                  <>
+                    <Articles title={"Financial Articles"} />
                   </>
                 );
               }}

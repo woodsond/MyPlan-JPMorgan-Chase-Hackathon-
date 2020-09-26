@@ -29,7 +29,7 @@ const Login = () => {
         <div className={"col"} />
         <div className={"col-6 my-auto"}>
           <Card className={"text-center"}>
-            <Card.Header className={"h1"}>My Path</Card.Header>
+            <Card.Header className={"h1"}>MyPath</Card.Header>
             <Card.Body>
               <div className={"container"}>
                 <div className={"row"}>
