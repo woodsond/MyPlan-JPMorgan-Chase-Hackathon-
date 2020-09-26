@@ -10,7 +10,7 @@ function CustomNavBar() {
         bg="success"
         variant="light"
       >
-        <ReactBootStrap.Navbar.Brand href="#home">
+        <ReactBootStrap.Navbar.Brand href="/">
           MyPath Virtual Series
         </ReactBootStrap.Navbar.Brand>
         <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
