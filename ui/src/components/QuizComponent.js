@@ -6,19 +6,19 @@ const QuizComponent = () => {
         "quizTitle": "Article Quiz",
         "questions":[
             {
-                "question": "ReactJS is developed by _____?",
+                "question": "What impact Finance _____?",
                 "questionType": "text",
                 "answerSelectionType": "single",
                 "answers": [
                 "Google Engineers",
-                "Facebook Engineers"
+                "COVID-19"
                 ],
                 "correctAnswer": "2",
                 "messageForCorrectAnswer": "Correct answer. Good job.",
                 "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
           },
           {
-            "question": "ReactJS is an MVC based framework?",
+            "question": "Is Finance impacted by Coid",
             "questionType": "text",
             "answerSelectionType": "single",
             "answers": [

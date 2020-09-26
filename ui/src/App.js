@@ -7,7 +7,8 @@ import CreditCards from "./pages/CreditCards";
 import Piggy from "./pages/Piggy";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
-import Footer from "./components/homePageFooter";
+import Article1 from "./pages/Article1";
+import Quiz1 from "./components/QuizComponent";
 
 const App = (props) => {
   const [isAuthenticated, setIsAuthenticated] = React.useState(true);
@@ -61,9 +62,28 @@ const App = (props) => {
               }}
             />
             <Route
-              path="/"
-              exact
-              render={() => {
+              path="/article1"
+              exact render={() => {
+                return (
+                  <>
+                    <Article1 />
+                  </>
+                );
+              }}
+            />
+            <Route
+              path="/Quiz1"
+              exact render={() => {
+                return (
+                  <>
+                    <Quiz1  />
+                  </>
+                );
+              }}
+            />
+            <Route
+              path="/CreditCards"
+              exact render={() => {
                 return (
                   <>
                     <Home title={"Home"} />
