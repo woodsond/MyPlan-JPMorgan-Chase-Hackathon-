@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import CustomNavbar from "./components/CustomNavbar";
+import CustomNavbar from "./components/customNavBar";
 import Articles from "./pages/Articles";
 import CreditCards from "./pages/CreditCards";
 import Piggy from "./pages/Piggy";
