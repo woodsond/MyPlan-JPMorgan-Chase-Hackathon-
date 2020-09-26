@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import CustomNavBar from "./components/customNavBar";
+import CustomNavbar from "./components/CustomNavbar";
 import Articles from "./pages/Articles";
 import CreditCards from "./pages/CreditCards";
 import Piggy from "./pages/Piggy";
@@ -9,7 +9,7 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 
 const App = (props) => {
-  const [isAuthenticated, setIsAuthenticated] = React.useState(true);
+  const [isAuthenticated, setIsAuthenticated] = React.useState(false);
 
   React.useEffect(() => {
     const token = localStorage.getItem("token");
@@ -24,49 +24,51 @@ const App = (props) => {
     <>
       {isAuthenticated ? (
         <Router>
-          <div className="Options">
-            <CustomNavBar />
-            <Route
-              path="/"
-              exact render={() => {
-                return (
-                  <>
-                    <Home title={"Home"} />
-                  </>
-                );
-              }}
-            />
-            <Route
-              path="/MyPiggy"
-              exact render={() => {
-                return (
-                  <>
-                    <Piggy title={"MyPiggy"} />
-                  </>
-                );
-              }}
-            />
-            <Route
-              path="/Articles"
-              exact render={() => {
-                return (
-                  <>
-                    <Articles title={"Financial Articles"} />
-                  </>
-                );
-              }}
-            />
-            <Route
-              path="/CreditCards"
-              exact render={() => {
-                return (
-                  <>
-                    <CreditCards title={"Credit Cards"} />
-                  </>
-                );
-              }}
-            />
-          </div>
+          <CustomNavbar />
+          <Route
+            path="/MyPiggy"
+            exact
+            render={() => {
+              return (
+                <>
+                  <Piggy title={"MyPiggy"} />
+                </>
+              );
+            }}
+          />
+          <Route
+            path="/Articles"
+            exact
+            render={() => {
+              return (
+                <>
+                  <Articles title={"Financial Articles"} />
+                </>
+              );
+            }}
+          />
+          <Route
+            path="/CreditCards"
+            exact
+            render={() => {
+              return (
+                <>
+                  <CreditCards title={"Credit Cards"} />
+                </>
+              );
+            }}
+          />
+          <Route
+            path="/"
+            exact
+            render={() => {
+              return (
+                <>
+                  <Home title={"Home"} />
+                </>
+              );
+            }}
+          />
         </Router>
       ) : (
         <>

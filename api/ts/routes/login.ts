@@ -46,6 +46,7 @@ export const login = async (req: Request, res: Response) => {
           expiresIn: "3h",
         }
       ),
+      username: currentUser.username,
     });
   } else {
     res
