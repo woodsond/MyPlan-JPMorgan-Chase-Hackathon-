@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --inspect --respawn ./ts/server.ts"
+    "dev": "npx ts-node-dev --inspect --respawn ./ts/server.ts"
   },
   "author": "",
   "license": "ISC",
