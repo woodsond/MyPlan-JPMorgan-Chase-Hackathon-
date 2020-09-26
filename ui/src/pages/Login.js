@@ -18,6 +18,7 @@ const Login = () => {
     });
     if (result.data.login === "success") {
       localStorage.setItem("token", result.data.token);
+      localStorage.setItem("username", result.data.username);
       window.location.reload();
     }
   };
@@ -29,7 +30,10 @@ const Login = () => {
         <div className={"col"} />
         <div className={"col-6 my-auto"}>
           <Card className={"text-center"}>
-            <Card.Header className={"h1"}>MyPath</Card.Header>
+            <Card.Header className={"h1"}>
+              <i className={"fas fa-piggy-bank pr-2"} />
+              MyPath
+            </Card.Header>
             <Card.Body>
               <div className={"container"}>
                 <div className={"row"}>
