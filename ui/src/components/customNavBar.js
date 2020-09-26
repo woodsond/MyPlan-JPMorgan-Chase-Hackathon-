@@ -13,7 +13,7 @@ function CustomNavBar() {
         <ReactBootStrap.Navbar.Brand href="#home">
           MyPath Virtual Series
         </ReactBootStrap.Navbar.Brand>
-        <ReactBootStrap.Navbar.Toggle aria-contorls="responsive-navbar-nav" />
+        <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
           <ReactBootStrap.Nav className="mr-auto">
             <ReactBootStrap.Nav.Link href="MyPiggy">
