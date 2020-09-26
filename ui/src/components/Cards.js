@@ -16,7 +16,7 @@ const Cards = () => {
               src="/images/iu.gif"
               text="Investing during COVID-19"
               label="Investments"
-              path="/"
+              path="/article1"
             />
             <CardItem
               src="images/iu.gif"

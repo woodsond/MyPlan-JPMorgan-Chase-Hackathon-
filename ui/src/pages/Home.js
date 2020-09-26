@@ -12,7 +12,7 @@ const Home = () => {
         <div className={"col"}>
           <div>
             <h2 className="display-4 font-weight-bolder justift-content-center">
-              <span style={{ color: "#39B54A" }}>MyPath</span>
+              <span style={{ color: "#39B54A" }}>MyPlan</span>
             </h2>
           </div>
           <div style={{ marginTop: "5%" }}>
