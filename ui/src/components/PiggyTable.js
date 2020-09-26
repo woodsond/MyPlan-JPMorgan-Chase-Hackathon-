@@ -24,13 +24,13 @@ class PiggyTable extends React.Component{
                         <td>9/2020</td>
                         <td>Kith Purchase</td>
                         <td>Clothes</td>
-                        <td>$70.00</td>
+                        <td>$70</td>
                     </tr>
                     <tr>
                         <td>10/2020</td>
                         <td>Saving</td>
                         <td>Deposit</td>
-                        <td>$1000.00</td>
+                        <td>$1000</td>
                     </tr>
                 </tbody>
             </Table>
