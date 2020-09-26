@@ -1,0 +1,29 @@
+.articles-container {
+    background: url('../images/iu.gif') center center/cover no-repeat;
+    /*background: url('../images/iu.gif') center center/cover no-repeat;*/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+}
+
+.articles-container > p {
+    /*color: #cd5c5c;*/
+    color: #ffffff;
+    font-size: 100px;
+    margin-top: 75px;
+    /*margin-left: 360px;*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.articles-container > p1 {
+    margin-top: -30px;
+    margin-bottom: 500px;
+    /*margin-left: 360px;*/
+    /*color: #cd5c5c;*/
+    color: #ffffff;
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
