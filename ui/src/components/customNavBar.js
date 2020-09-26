@@ -16,7 +16,7 @@ function CustomNavbar() {
         }}
       >
         <i className={"fas fa-piggy-bank pr-2"} />
-        MyPath
+        MyPlan
       </ReactBootStrap.Navbar.Brand>
       <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
         <ReactBootStrap.Nav className="mr-auto">

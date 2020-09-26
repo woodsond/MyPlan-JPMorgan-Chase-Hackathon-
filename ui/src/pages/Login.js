@@ -32,7 +32,7 @@ const Login = () => {
           <Card className={"text-center"}>
             <Card.Header className={"h1"}>
               <i className={"fas fa-piggy-bank pr-2"} />
-              MyPath
+              MyPlan
             </Card.Header>
             <Card.Body>
               <div className={"container"}>
@@ -68,7 +68,7 @@ const Login = () => {
                   <div className={"col"}>
                     <Button
                       type="submit"
-                      variant="primary"
+                      variant="success"
                       style={{ width: "35%" }}
                       onClick={handleSubmit}
                     >

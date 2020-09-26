@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Article1 from "./pages/Article1";
 import Quiz1 from "./components/QuizComponent";
+import Footer from "./components/homePageFooter";
 
 const App = (props) => {
   const [isAuthenticated, setIsAuthenticated] = React.useState(false);
@@ -63,7 +64,8 @@ const App = (props) => {
             />
             <Route
               path="/article1"
-              exact render={() => {
+              exact
+              render={() => {
                 return (
                   <>
                     <Article1 />
@@ -73,17 +75,19 @@ const App = (props) => {
             />
             <Route
               path="/Quiz1"
-              exact render={() => {
+              exact
+              render={() => {
                 return (
                   <>
-                    <Quiz1  />
+                    <Quiz1 />
                   </>
                 );
               }}
             />
             <Route
-              path="/CreditCards"
-              exact render={() => {
+              path="/"
+              exact
+              render={() => {
                 return (
                   <>
                     <Home title={"Home"} />
