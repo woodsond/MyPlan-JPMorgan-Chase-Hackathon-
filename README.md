@@ -6,6 +6,10 @@
 
 2. Input the values into your `.env` file for the requested fields.
 
+## Database
+
+1. To bring up the database, make sure that you are in the project root, and run `docker-compose up`.
+
 ## API
 
 1. Run `npm i` in your `api` folder.
