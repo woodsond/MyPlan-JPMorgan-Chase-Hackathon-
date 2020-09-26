@@ -7,6 +7,7 @@ import CreditCards from "./pages/CreditCards";
 import Piggy from "./pages/Piggy";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import Footer from "./components/homePageFooter";
 
 const App = (props) => {
   const [isAuthenticated, setIsAuthenticated] = React.useState(true);
